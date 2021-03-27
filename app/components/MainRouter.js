@@ -7,7 +7,6 @@ import {
 import Main from "./Main";
 import Login from "./Login";
 import Signup from "./Signup";
-import Pricing from "./Pricing";
 import axios from 'axios';
 
 export default class MainRouter extends Component {
