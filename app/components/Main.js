@@ -1,5 +1,6 @@
 // Include React
 import React, { Component } from 'react';
+import AudioPlayer from './AudioPlayer';
 import Nav from './children/Nav'
 
 require('./main.css');
@@ -38,7 +39,6 @@ export default class Main extends Component {
                             </ul>
                             <a href="#about" className="btn btn-circle page-scroll">
                                 <i className="fa down-arrow animated">
-                                   <img className="down-arrow" src={require("../img/shapes/HomeDown.png")} alt="Down Arrow" />
                                 </i>
                             </a>
                         </div>
@@ -46,6 +46,7 @@ export default class Main extends Component {
                 </div>
             </div>
         </header>
+        <AudioPlayer />
 
         <section id="about" className="container content-section text-center">
             <div className="row">
@@ -71,7 +72,6 @@ export default class Main extends Component {
                                         <div className="active item">
                                           <blockquote><p>Denim you probably haven't heard of. Lorem ipsum dolor met consectetur adipisicing sit amet, consectetur adipisicing elit, of them jean shorts sed magna aliqua. Lorem ipsum dolor met.</p></blockquote>
                                           <div className="carousel-info">
-                                            <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" className="pull-left" />
                                             <div className="pull-left">
                                               <span className="testimonials-name">Lina Mars</span>
                                               <span className="testimonials-post">Commercial Director</span>
