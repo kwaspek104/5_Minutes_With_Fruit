@@ -1,8 +1,8 @@
 {
-  "name": "travelsecure-react",
+  "name": "5_minutes_with_fruit",
   "version": "1.0",
   "homepage": "https://sleepy-springs-57038.herokuapp.com/",
-  "author": "Omar Patel",
+  "author": "Power Rangers",
   "license": "MIT",
   "scripts": {
     "dev": "concurrently \"webpack --watch\" \"nodemon ./server/bin/www\"",
@@ -29,7 +29,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/OSP123/TravelSecure-Mongo.git"
+    "url": "https://github.com/kwaspek104/5_Minutes_With_Fruit"
   },
   "dependencies": {
     "axios": "^0.21.1",
