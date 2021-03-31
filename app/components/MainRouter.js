@@ -8,6 +8,7 @@ import Main from "./Main";
 import Login from "./Login";
 import Signup from "./Signup";
 import axios from 'axios';
+import AudioPlayer from './AudioPlayer';
 
 
 export default class MainRouter extends Component {
@@ -72,8 +73,8 @@ export default class MainRouter extends Component {
               logout={this.logout}
             />} 
           />
-          <Route path="/pricing" render={props => 
-            <Pricing
+          <Route path="/audioplayer" render={props => 
+            <AudioPlayer
               {...props}
               authenticate={this.authenticate}
               deAuthenticate={this.deAuthenticate}

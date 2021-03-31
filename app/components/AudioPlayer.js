@@ -168,3 +168,6 @@ class AudioPlayer extends Component {
 }
 
 export default AudioPlayer
+
+//rendor AudioPlayer in seperate component and link it to Audio page in Navbar
+
