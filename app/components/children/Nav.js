@@ -36,6 +36,9 @@ export default class Nav extends Component {
                   <li>
                       <Link to={"/login"} ><div className="page-scroll nav-left-text" data-toggle="modal"><p>Log-in</p></div></Link>
                     </li>
+                    <li>
+                      <Link to={"/login"} ><div className="page-scroll nav-left-text" data-toggle="modal"><p>AudioPlayer</p></div></Link>
+                    </li>
               </ul>
           </div>
         </div>
