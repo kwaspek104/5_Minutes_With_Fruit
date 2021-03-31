@@ -1,6 +1,6 @@
 // Include React
 import React, { Component } from 'react';
-import AudioPlayer from './AudioPlayer';
+// import AudioPlayer from './AudioPlayer';
 import Nav from './children/Nav'
 
 require('./main.css');
@@ -46,7 +46,7 @@ export default class Main extends Component {
                 </div>
             </div>
         </header>
-        <AudioPlayer />
+        
 
         <section id="about" className="container content-section text-center">
             <div className="row">
