@@ -3,7 +3,7 @@
     margin: 1em auto;
     width: 500px;
     overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(83, 194, 4, 0.701);
   }
   
   .player-progress-container {
@@ -11,7 +11,7 @@
     width: 300px;
     height: 9px;
     margin: 0 auto;
-    background-color: #414141;
+    background-color: #8e0d0d;
     border-radius: 40px;
   }
 
@@ -55,7 +55,7 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    color: #555555;
+    color: #210505;
     /* background-color: transparent; */
     border: 0;
     border-radius: 50%;
