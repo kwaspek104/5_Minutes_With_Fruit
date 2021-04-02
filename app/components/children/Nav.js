@@ -15,7 +15,6 @@ export default class Nav extends Component {
             <button type="button" className="navbar-toggle navbar-toggle-right" data-toggle="collapse" data-target=".navbar-main-collapse1">
                 <i className="glyphicon glyphicon-plus"></i>
             </button>
-            <Link to={"/"} ><img className="icon-middle-nav-mobile" src={require("../../img/shapes/shape.png")} /></Link>
           </div>
 
          
@@ -28,19 +27,20 @@ export default class Nav extends Component {
                   </li>
                   <li>
                       <a className="page-scroll nav-right-text" href="/trips">
-                        <img className="navigation-icons" src={require("../../img/shapes/offline.png")} />
                         <p>New Session</p>
                       </a>
                   </li>
                   <li>
-                      <Link to={"/login"} ><div className="page-scroll nav-left-text" data-toggle="modal"><p>Pick a Fruit</p></div></Link>
+                      <Link to={"/fruit"} ><div className="page-scroll nav-left-text" data-toggle="modal"><p>Pick a Fruit</p></div></Link>
                     </li>
                   <li>
                       <Link to={"/login"} ><div className="page-scroll nav-left-text" data-toggle="modal"><p>Log-in</p></div></Link>
                     </li>
+                    <li>
+                      <Link to={"/audioplayer"} ><div className="page-scroll nav-left-text" data-toggle="modal"><p>AudioPlayer</p></div></Link>
+                    </li>
               </ul>
           </div>
-          <Link to={"/"} ><img className="icon-middle-nav-desktop" src={require("../../img/shapes/shape.png")} /></Link>
         </div>
       </nav>
     );
