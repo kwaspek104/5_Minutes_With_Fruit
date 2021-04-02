@@ -25,12 +25,6 @@ export default class Nav extends Component {
             >
               <i className="glyphicon glyphicon-plus"></i>
             </button>
-            <Link to={"/"}>
-              <img
-                className="icon-middle-nav-mobile"
-                src={require("../../img/shapes/shape.png")}
-              />
-            </Link>
           </div>
 
           <div className="collapse navbar-collapse navbar-right navbar-main-collapse1">
@@ -40,10 +34,6 @@ export default class Nav extends Component {
               </li>
               <li>
                 <a className="page-scroll nav-right-text" href="/trips">
-                  <img
-                    className="navigation-icons"
-                    src={require("../../img/shapes/offline.png")}
-                  />
                   <p>New Session</p>
                 </a>
               </li>
@@ -67,14 +57,18 @@ export default class Nav extends Component {
                   </div>
                 </Link>
               </li>
+              <li>
+                <Link to={"/audioplayer"}>
+                  <div
+                    className="page-scroll nav-left-text"
+                    data-toggle="modal"
+                  >
+                    <p>AudioPlayer</p>
+                  </div>
+                </Link>
+              </li>
             </ul>
           </div>
-          <Link to={"/"}>
-            <img
-              className="icon-middle-nav-desktop"
-              src={require("../../img/shapes/shape.png")}
-            />
-          </Link>
         </div>
       </nav>
     );
