@@ -4,7 +4,7 @@
 
 1. [Description](#Description)
 2. [Application Link](#Application-Link)
-3. [Demo](#Demo)
+3. [Application Demo](#Application-Demo)
 4. [License](#License)
 5. [Badges](#Badges)
 6. [Contact](#Contact)
@@ -19,7 +19,9 @@ The idea is for people to do a 5-minute relaxation activity where they will list
 
 https://agile-fortress-41792.herokuapp.com/
 
-# Demo
+# Application Demo
+
+![Demo](public\assets\fruit-app-demo.JPG)
 
 # License
 
