@@ -5,7 +5,7 @@
 
 // This way, we can set certain properties here
 // rather than having them take up space in server.js.
-const debug = require('debug')('express-example');
+// const debug = require('debug')('express-example');
 
 // we bring in the app we exported from server.js
 const app = require('../server/server.js');
