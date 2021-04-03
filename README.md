@@ -21,7 +21,7 @@ https://agile-fortress-41792.herokuapp.com/
 
 # Application Demo
 
-![Demo](public\assets\fruit-app-demo.JPG)
+![Demo](public/assets/fruit-app-demo.JPG)
 
 # License
 
