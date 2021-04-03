@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './AudioPlayer.css'
+import Nav from './children/Nav'
+
 
 const audioSrc = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'
 
@@ -108,7 +110,17 @@ class AudioPlayer extends Component {
     render() {
         const { playing, progress, mute } = this.state
         return (
+            <div>
+                <Nav
+                    authenticated={this.props.authenticated}
+                    authenticate={this.props.authenticate}
+                    deAuthenticate={this.props.deAuthenticate}
+                    logout={this.props.logout}
+                />
+            
+
             <div className="player-container">
+                
                 <div className="player-options">
                     <button
                         onClick={this.toggle}
@@ -162,6 +174,7 @@ class AudioPlayer extends Component {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         )
     }
