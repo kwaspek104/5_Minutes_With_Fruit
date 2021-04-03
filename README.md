@@ -3,7 +3,7 @@
 # Table of Contents
 
 1. [Description](#Description)
-2. [Link](#Link)
+2. [Application Link](#Application-Link)
 3. [Demo](#Demo)
 4. [License](#License)
 5. [Badges](#Badges)
@@ -15,7 +15,9 @@ This is an application for stress-eating intervention. The goal is to give users
 
 The idea is for people to do a 5-minute relaxation activity where they will listen to relaxation-inducing sounds while eating a piece of fruit. The individual will repeat this process 7 times during the week whenever they feel stressed out. After they go through the activity, the fruit combined with the sounds will help the individual to feel more relaxed and ready to continue their day.
 
-# Link
+# Application Link
+
+https://agile-fortress-41792.herokuapp.com/
 
 # Demo
 
