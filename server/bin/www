@@ -8,7 +8,7 @@
 // const debug = require('debug')('express-example');
 
 // we bring in the app we exported from server.js
-const app = require('../server/server.js');
+const app = require('../server.js');
 
 // we set the port of the app
 app.set('port', process.env.PORT || 3000);
