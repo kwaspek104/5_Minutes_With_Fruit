@@ -1,5 +1,5 @@
 body {
-	color: white;
+	color: black;
 }
 
 #registration-container {
@@ -17,5 +17,5 @@ body {
 }
 
 .container-page {
-	background: grey;
+	background: rgb(173, 173, 173);
 }
