@@ -33,9 +33,7 @@
   float: right;
 }
 
-.fa-bars {
-  font-size: 2.3em;
-}
+
 .navbar-custom .navbar-toggle:focus,
 .navbar-custom .navbar-toggle:active {
   outline: none;

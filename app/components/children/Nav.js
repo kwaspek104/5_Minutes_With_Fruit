@@ -9,9 +9,7 @@ export default class Nav extends Component {
       <nav className="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div className="container nav-container">
           <div className="navbar-header">
-            <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                <i className="fa fa-bars"></i>
-            </button>
+          
             <button type="button" className="navbar-toggle navbar-toggle-right" data-toggle="collapse" data-target=".navbar-main-collapse1">
                 <i className="glyphicon glyphicon-plus"></i>
             </button>
