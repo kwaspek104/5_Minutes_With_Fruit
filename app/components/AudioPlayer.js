@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import './AudioPlayer.css'
+import Audio from './audio/audio1.mp3'
 
-const audioSrc = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'
+const audioSrc = audio
 
 class AudioPlayer extends Component {
     state = {
