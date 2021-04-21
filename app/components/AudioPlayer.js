@@ -3,7 +3,8 @@ import './AudioPlayer.css'
 import Nav from './children/Nav'
 
 
-const audioSrc = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'
+
+const audioSrc = ""
 
 class AudioPlayer extends Component {
     state = {

@@ -5,14 +5,6 @@ import Nav from './children/Nav'
 
 require('./main.css');
 
-// Here we include all of the sub-components
-// var Form = require("./children/Form");
-// var Results = require("./children/Results");
-// var History = require("./children/History");
-
-// // Helper for making AJAX requests to our API
-// var helpers = require("./utils/helpers");
-
 // Creating the Main component
 export default class Main extends Component {
   render() {
