@@ -1,27 +1,10 @@
 /* Player */
 .player-container {
-<<<<<<< HEAD
   margin: 15rem auto;
   width: 500px;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(138, 198, 212, 0.701);
 }
-=======
-    margin: 15rem auto;
-    width: 500px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(138, 198, 212, 0.701);
-  }
-  
-  .player-progress-container {
-    position: relative;
-    width: 300px;
-    height: 9px;
-    margin: 0 auto;
-    background-color: #0d3a8e;
-    border-radius: 40px;
-  }
->>>>>>> main
 
 .player-progress-container {
   position: relative;
