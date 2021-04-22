@@ -16,6 +16,7 @@ export default class Fruit extends Component {
           deAuthenticate={this.props.deAuthenticate}
           logout={this.props.logout}
         />
+        <br/>
       
       <div className="card mb-3">
         

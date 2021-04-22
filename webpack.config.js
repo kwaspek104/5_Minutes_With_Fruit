@@ -12,6 +12,8 @@ module.exports = {
     publicPath: '/'
   },
 
+
+
   // This section desribes the transformations we will perform
   module: {
     rules: [
@@ -28,7 +30,14 @@ module.exports = {
         }
       },
       {test: /\.css$/, loaders: ['style-loader', 'css-loader']},
-      {test: /\.(png|jpg|jpeg)$/, loader: 'url-loader'}
+      {test: /\.(png|jpg|jpeg)$/, loader: 'url-loader'},
+      //added file loader mp3 test after installing file loader in npm
+        {test: /\.mp3$/,
+        loader: 'file-loader',
+        query: {
+          name: 'static/media/[name].[hash:8].[ext]'
+        }
+      },
     ]
   },
   // This lets us debug our react code in chrome dev tools. Errors will have lines and file names
