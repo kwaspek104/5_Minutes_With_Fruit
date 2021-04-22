@@ -1,4 +1,4 @@
-#5-minutes-with-fruit
+# 5-minutes-with-fruit
 
 # Table of Contents
 
