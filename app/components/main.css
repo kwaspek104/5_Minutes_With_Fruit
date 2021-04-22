@@ -10,9 +10,9 @@
   height: auto;
   padding: 2% 0;
   text-align: center;
-  color: white;
+  color: black;
   /* background: url(../img/home.jpeg) no-repeat center scroll; */
-  background-color: black;
+  background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -55,9 +55,9 @@
 .user-feedback-section {
   width: 100%;
   padding: 50px 0;
-  color: white;
+  color: black;
   /* background: url(../img/Search.jpeg) no-repeat center center scroll; */
-  background-color: black;
+  background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
