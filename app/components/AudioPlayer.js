@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from 'react';
 import './AudioPlayer.css';
 import Nav from './children/Nav';
@@ -7,6 +8,15 @@ import audio from'./audio/meditation.mp3';
 // const audioSrc = 'https://www.dropbox.com/s/0vxb9qyyxw7oblr/PMR%20-%20C1%20-%20Day%202%20%281%29.mp3?dl=0'
 const audioSrc = audio
 
+=======
+import React, { Component } from 'react'
+import './AudioPlayer.css'
+import Nav from './children/Nav'
+
+
+
+const audioSrc = ""
+>>>>>>> main
 
 class AudioPlayer extends Component {
     state = {
@@ -114,12 +124,17 @@ class AudioPlayer extends Component {
         const { playing, progress, mute } = this.state
         return (
             <div>
+<<<<<<< HEAD
                  <Nav
+=======
+                <Nav
+>>>>>>> main
                     authenticated={this.props.authenticated}
                     authenticate={this.props.authenticate}
                     deAuthenticate={this.props.deAuthenticate}
                     logout={this.props.logout}
                 />
+<<<<<<< HEAD
 
 <div className="player-container">
                  
@@ -180,6 +195,67 @@ class AudioPlayer extends Component {
 
             </div>
             
+=======
+            
+
+            <div className="player-container">
+                
+                <div className="player-options">
+                    <button
+                        onClick={this.toggle}
+                        className="player-btn big"
+                        title="Play/Pause"
+                    >
+                        <i className={playing ? 'fa fa-pause' : 'fa fa-play'} />
+                    </button>
+                    <div className="progress-waveform-wrap">
+                        <audio
+                            ref={audio => {
+                                this.audio = audio
+                            }}
+                            src={this.state.src}
+                            preload="auto"
+                        />
+                        <div
+                            className="player-progress-container"
+                            onClick={e => this.setProgress(e)}
+                        >
+                            <span
+                                className="player-progress-value"
+                                style={{ width: progress + '%' }}
+                            />
+                        </div>
+                    </div>
+                    <div className="player-buttons player-controls">
+                        <div className="player-time">
+                            <span className="current-time">
+                                {this.state.currentTime}
+                            </span>{' '}
+                            /{' '}
+                            <span className="duration">
+                                {this.state.duration}
+                            </span>
+                        </div>
+                        <div className="player-buttons">
+                            <button
+                                className="player-btn player-btn-mute"
+                                title="Mute/Unmute"
+                                onClick={this.toggleMute}
+                            >
+                                <i
+                                    className={
+                                        mute
+                                            ? 'fa fa-volume-off'
+                                            : 'fa fa-volume-up'
+                                    }
+                                />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+>>>>>>> main
         )
     }
 }

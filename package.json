@@ -1,9 +1,12 @@
 {
   "name": "5_minutes_with_fruit",
   "version": "1.0",
-  "homepage": "https://obscure-escarpment-38766.herokuapp.com/",
+  "homepage": "https://agile-fortress-41792.herokuapp.com/",
   "author": "Power Rangers",
   "license": "MIT",
+  "engines": {
+    "node": "15.5.0"
+  },
   "scripts": {
     "dev": "concurrently \"webpack --watch\" \"nodemon ./server/bin/www\"",
     "start": "node ./server/bin/www",
