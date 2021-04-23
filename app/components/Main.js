@@ -10,7 +10,7 @@ require('./main.css');
 export default class Main extends Component {
   render() {
     return (
-      <div>
+      <div className="main">
         <Nav
           authenticated={this.props.authenticated}
           authenticate={this.props.authenticate}
@@ -43,9 +43,7 @@ export default class Main extends Component {
                     <button className="btn" >Start</button>
                 </div>
             </div>
-        </section>
-
-        
+        </section>       
 
         <Footer/>
       </div>
