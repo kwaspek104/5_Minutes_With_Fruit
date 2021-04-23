@@ -1,7 +1,8 @@
 // Include React
 import React, { Component } from 'react';
 // import AudioPlayer from './AudioPlayer';
-import Nav from './children/Nav'
+import Nav from './children/Nav';
+import Footer from './children/Footer'
 
 require('./main.css');
 
@@ -21,8 +22,8 @@ export default class Main extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-8 col-md-offset-2">
-                            <h1 className="brand-heading">5 Minutes With Fruit!</h1>
-                            <h3 className="intro-text">Reduce Stress Eating Therapeutically!</h3>
+                            <h1 className="brand-heading">6 Minutes With Fruit!</h1>
+                            <h3 className="intro-text">Use Psychology to Hack Your Stress Eating</h3>
                             
                             <a href="#about" className="btn btn-circle page-scroll">
                                 <i className="fa down-arrow animated">
@@ -39,18 +40,14 @@ export default class Main extends Component {
             <div className="row">
                 <div className="col-lg-8 col-lg-offset-2">
                  
-                    <button className="btn" >Get Started</button>
+                    <button className="btn" >Start</button>
                 </div>
             </div>
         </section>
 
         
 
-        <footer>
-            <div className="container text-center">
-                <p>Copyright &copy; 5-minutes with fruit 2021</p>
-            </div>
-        </footer>
+        <Footer/>
       </div>
     );
   }
