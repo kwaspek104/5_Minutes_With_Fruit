@@ -20,10 +20,10 @@ export default class Main extends Component {
         /> */}
 
         <header className="main-header">
-          <a href="" className="brand-logo">
+          {/* <a href="" className="brand-logo">
             <img className="logo" src={logo} alt=""/>
             <div className="brand-logo-name">6 Minutes With Fruit</div>
-          </a>
+          </a> */}
           <nav className="main-nav">
             <ul>
               <li><a href="">About</a></li>
@@ -31,11 +31,22 @@ export default class Main extends Component {
             </ul>
           </nav>
         </header>
-        <section className="discover-main-section">
-          <div className="call-to-action">
-            <h1 className="title"></h1>
+
+        <section className="home-main-section">
+          
+
+          <div>
+          <h1 className="title">6 Minutes With Fruit</h1>
+          <span className="subtitle">Use Psychology to Hack Your Stress Eating</span>
+          <a href="#" className="btn">Start</a>
           </div>
 
+          <div className="img-wrapper">
+            <div className="orange-feature-img">
+
+            </div>
+          </div>
+          
         </section>
 
         <Footer />
