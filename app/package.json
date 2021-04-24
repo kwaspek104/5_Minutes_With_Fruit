@@ -10,6 +10,7 @@
     "react-audio-player": "^0.14.0",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
+    "survey-react": "1.0.58",
     "simple-react-audio-player": "^1.0.1",
     "web-vitals": "^1.1.1"
   },

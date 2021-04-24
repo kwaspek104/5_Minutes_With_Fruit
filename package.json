@@ -53,6 +53,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
+    "survey": "^0.3.5",
     "webpack-cli": "^4.5.0"
   }
 }
