@@ -1,27 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-:root {
-  --main-font:"Poppins, sans-serif";
-  /* --secondary-font: "LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif"; */
-  --main-color-dark: #000000;
-  --main-color: rgba(131, 166, 186, 1);
-  --secondary-color:rgba(206, 228, 235, 1);
-  --button-color: rgba(71, 155, 181, 1);
-
-  ;
-}
 
 footer {
-  background-color: var(--main-color);
+  color:white;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
+ 
+}
+
+ p{
+  font-size:1.5em
 }
