@@ -1,53 +1,66 @@
-// Include React
-import React, { Component } from 'react';
-// import AudioPlayer from './AudioPlayer';
-import Nav from './children/Nav';
-import Footer from './children/Footer'
+import React, { Component } from "react";
+// import Nav from "./children/Nav";
+import Footer from "./children/Footer";
+import logo from "./images/orange.png";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
-require('./main.css');
+require("./main.css");
 
 // Creating the Main component
 export default class Main extends Component {
   render() {
     return (
-      <div>
-        <Nav
+      <div className="container full-height-grow">
+        {/* <Nav
           authenticated={this.props.authenticated}
           authenticate={this.props.authenticate}
           deAuthenticate={this.props.deAuthenticate}
           logout={this.props.logout}
-        />   
-        <header className="intro">
-            <div className="intro-body">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-8 col-md-offset-2">
-                            <h1 className="brand-heading">6 Minutes With Fruit!</h1>
-                            <h3 className="intro-text">Use Psychology to Hack Your Stress Eating</h3>
-                            
-                            <a href="#about" className="btn btn-circle page-scroll">
-                                <i className="fa down-arrow animated">
-                                </i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        
+        /> */}
 
-        <section id="about" className="container content-section text-center">
-            <div className="row">
-                <div className="col-lg-8 col-lg-offset-2">
-                 
-                    <button className="btn" >Start</button>
-                </div>
-            </div>
+        <Helmet>
+          <style>{"body { background-color: rgba(131, 166, 186, 1); }"}</style>
+        </Helmet>
+
+        <header className="main-header">
+          <a href="" className="brand-logo">
+            <img className="logo" src={logo} alt="" />
+            {/* <div className="brand-logo-name"></div> */}
+          </a>
+          <nav className="main-nav">
+            <ul>
+              <li>
+                <Link to={"/About"}>About</Link>
+              </li>
+              <li>
+                <Link to={"/login"}>Log In</Link>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <section className="home-main-section">
+          <div className="call-to-action">
+            <h1 className="title">6 Minutes With Fruit</h1>
+            <span className="subtitle">
+              Use Psychology to Hack Your Stress Eating
+            </span>
+            <a href="#" className="btn">
+              Start
+            </a>
+          </div>
+
+          <div className="img-wrapper">
+            <div className="orange-feature-img"></div>
+          </div>
         </section>
 
-        
+        <div className="home-page-circle-1"></div>
+        <div className="home-page-circle-2"></div>
+        <div className="home-page-circle-3"></div>
 
-        <Footer/>
+        <Footer />
       </div>
     );
   }
