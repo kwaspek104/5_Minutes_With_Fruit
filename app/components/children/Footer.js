@@ -8,7 +8,7 @@ export default class Footer extends Component {
       <div>
         <footer>
           <div className="container text-center">
-            <p classname="footer-font">Copyright &copy; 6-minutes with fruit 2021</p>
+            <p className="footer-font">Copyright &copy; 6-minutes with fruit 2021</p>
           </div>
         </footer>
       </div>

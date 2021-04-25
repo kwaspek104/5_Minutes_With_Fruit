@@ -31,7 +31,7 @@ export default class Main extends Component {
           <nav className="main-nav">
             <ul>
               <li>
-                <Link to={"/About"}>About</Link>
+                <Link to={"/about"}>About</Link>
               </li>
               <li>
                 <Link to={"/login"}>Log In</Link>
@@ -46,9 +46,12 @@ export default class Main extends Component {
             <span className="subtitle">
               Use Psychology to Hack Your Stress Eating
             </span>
-            <a href="#" className="btn">
-              Start
-            </a>
+
+            <Link to="/instructions">
+              <button type="button" className="btn">START</button>
+            </Link>
+
+            
           </div>
 
           <div className="img-wrapper">
