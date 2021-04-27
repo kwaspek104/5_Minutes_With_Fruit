@@ -38,12 +38,12 @@ export default class Nav extends Component {
                 </a>
               </li>
               <li>
-                <Link to={"/fruit"}>
+                <Link to={"/quiz"}>
                   <div
                     className="page-scroll nav-left-text"
                     data-toggle="modal"
                   >
-                    <p>Pick a Fruit</p>
+                    <p>Take Quiz</p>
                   </div>
                 </Link>
               </li>
