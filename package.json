@@ -51,6 +51,7 @@
     "passport-local": "^1.0.0",
     "popper.js": "^1.16.1",
     "react": "^17.0.1",
+    "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2.0",
