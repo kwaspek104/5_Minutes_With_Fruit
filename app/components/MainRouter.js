@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Main from "./Main";
 import Login from "./Login";
 import Signup from "./Signup";
-import Fruit from "./Fruit";
+import Quiz from "./Quiz";
 import axios from "axios";
 import AudioPlayer from "./AudioPlayer";
 import About from "./About";
@@ -116,7 +116,7 @@ export default class MainRouter extends Component {
           <Route
             path="/fruit"
             render={(props) => (
-              <Fruit
+              <Quiz
                 {...props}
                 authenticate={this.authenticate}
                 deAuthenticate={this.deAuthenticate}
