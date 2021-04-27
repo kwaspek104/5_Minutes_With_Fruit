@@ -1,3 +1,13 @@
+.nav-items {
+  color: white;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  border-color:rgba(51, 144, 173, 1);
+  padding: 2rem;
+  font-size: 1.4em;
+}
+
+
 
 .home-main-section {
   display: flex;
@@ -14,6 +24,9 @@
   align-items: stretch;
   justify-content: flex-end;
 }
+
+
+
 .home-main-section .orange-feature-img {
   background-image: url(images/orange.png);
   flex-grow: 1;
@@ -93,11 +106,4 @@
   background-color: rgb(52, 87, 178, .1);
 }
 
-nav li {
-  color: white;
-  border-top: solid 1px;
-  border-bottom: solid 1px;
-  border-color:rgba(51, 144, 173, 1);
-  padding: 2rem;
-  font-size: 1.4em;
-}
+

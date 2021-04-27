@@ -6,6 +6,8 @@ import Signup from "./Signup";
 import Fruit from "./Fruit";
 import axios from "axios";
 import AudioPlayer from "./AudioPlayer";
+import About from "./About";
+import Instructions from "./Instructions";
 
 export default class MainRouter extends Component {
   constructor(props) {
@@ -64,6 +66,32 @@ export default class MainRouter extends Component {
             path="/login"
             render={(props) => (
               <Login
+                {...props}
+                authenticate={this.authenticate}
+                deAuthenticate={this.deAuthenticate}
+                authenticated={this.state.authenticated}
+                logout={this.logout}
+              />
+            )}
+          />
+           <Route
+            exact
+            path="/about"
+            render={(props) => (
+              <About
+                {...props}
+                authenticate={this.authenticate}
+                deAuthenticate={this.deAuthenticate}
+                authenticated={this.state.authenticated}
+                logout={this.logout}
+              />
+            )}
+          />
+           <Route
+            exact
+            path="/instructions"
+            render={(props) => (
+              <Instructions
                 {...props}
                 authenticate={this.authenticate}
                 deAuthenticate={this.deAuthenticate}

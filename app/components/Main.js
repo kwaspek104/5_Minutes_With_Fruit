@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // import Nav from "./children/Nav";
-import Footer from "./children/Footer";
+// import Footer from "./children/Footer";
 import logo from "./images/orange.png";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -25,15 +25,14 @@ export default class Main extends Component {
 
         <header className="main-header">
           <a href="" className="brand-logo">
-            <img className="logo" src={logo} alt="" />
-            {/* <div className="brand-logo-name"></div> */}
+            <img className="logo" src={logo} alt="" />        
           </a>
           <nav className="main-nav">
             <ul>
-              <li>
-                <Link to={"/About"}>About</Link>
+              <li className="nav-items">
+                <Link to={"/about"}>About</Link>
               </li>
-              <li>
+              <li className="nav-items">
                 <Link to={"/login"}>Log In</Link>
               </li>
             </ul>
@@ -46,9 +45,12 @@ export default class Main extends Component {
             <span className="subtitle">
               Use Psychology to Hack Your Stress Eating
             </span>
-            <a href="#" className="btn">
-              Start
-            </a>
+
+            <Link to="/instructions">
+              <button type="button" className="btn">START</button>
+            </Link>
+
+            
           </div>
 
           <div className="img-wrapper">
@@ -60,7 +62,7 @@ export default class Main extends Component {
         <div className="home-page-circle-2"></div>
         <div className="home-page-circle-3"></div>
 
-        <Footer />
+        
       </div>
     );
   }

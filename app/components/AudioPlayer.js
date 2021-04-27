@@ -3,8 +3,7 @@ import './AudioPlayer.css';
 import Nav from './children/Nav';
 import audio from'./audio/meditation.mp3';
 
-// const audioSrc = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'
-// const audioSrc = 'https://www.dropbox.com/s/0vxb9qyyxw7oblr/PMR%20-%20C1%20-%20Day%202%20%281%29.mp3?dl=0'
+
 const audioSrc = audio
 
 
