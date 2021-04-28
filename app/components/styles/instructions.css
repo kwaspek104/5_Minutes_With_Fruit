@@ -39,29 +39,45 @@
 .card {
   background: rgba(206, 228, 235, 0.51);
   border-radius: 33px;
-  padding: 20px 20px;
+  padding: 20px 20px; 
   text-align: center;
   overflow: hidden;
   transition: all 0.3s ease;
 }
 
-.box{
-  border:1px solid #3390AD;
+.box {
+  border: 1px solid #3390ad;
   border-radius: 33px;
   padding: 195px 135px;
   text-align: center;
 }
 
-.register{
-  display:flex;
+.register {
+  display: flex;
   align-content: space-around;
-  align-items:center;
+  align-items: center;
   justify-content: center;
-  /* padding-top: 6rem; */
+
 }
 
-.btn-register{
+.btn-register {
   padding: 0.85rem 11.81rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+
+
+@media (max-width: 970px) {
+  .card {
+    display: inline-table;
+  }
+
+}
+
+
