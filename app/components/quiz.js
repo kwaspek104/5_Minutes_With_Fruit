@@ -3,7 +3,7 @@ import React, { Component } from "react";
 // import "survey-react/survey.css";
 
 
-require("./quiz.css");
+require("./styles/quiz.css");
 
 
 
