@@ -9,7 +9,6 @@ import logo from "./images/orange.png";
 import { Link } from "react-router-dom";
 import Footer from "./children/Footer";
 
-
 require("./styles/Signup.css");
 
 export default class Signup extends Component {
@@ -234,7 +233,10 @@ export default class Signup extends Component {
 				deAuthenticate={this.props.deAuthenticate}
 				logout={this.props.logout}
 			/> */}
-        <div id="registration-container" className="container-fluid">
+        <div
+          id="registration-container join-main-section"
+          className="container-fluid"
+        >
           <section className="container">
             <div className="container-page">
               <form onSubmit={this.handleSubmit.bind(this)}>
@@ -352,16 +354,6 @@ export default class Signup extends Component {
                       ref="emailRepeatFeedback"
                     ></small>
                   </div>
-
-                  <div className="col-sm-6">
-                    <input type="checkbox" className="checkbox" />
-                    Sigh up for our newsletter
-                  </div>
-
-                  <div className="col-sm-6">
-                    <input type="checkbox" className="checkbox" />
-                    Send notifications to this email
-                  </div>
                 </div>
 
                 <div className="col-md-6">
@@ -396,7 +388,7 @@ export default class Signup extends Component {
           </section>
         </div>
 
-		<Footer/>
+        <Footer />
       </div>
     );
   }
