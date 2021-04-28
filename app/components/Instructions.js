@@ -29,24 +29,23 @@ export default class Instructions extends Component {
         <section className="intro-section">
           <div className="max-with">
             <h2 className="title-secondary">Instructions</h2>
-            <div className="carousel">
-              <div className="owl-stage-outer">
-                <div className="owl-stage">
-                  <div className="owl-item">
-                    <div className="card">
-                      <div className="box"></div>
-                    </div>
-                    <div className="card">
-                      <div className="box"></div>
-                    </div>
-                    <div className="card">
-                      <div className="box"></div>
-                    </div>
-                  </div>
+
+            <div className="carousel scrollmenu">
+              <div className="owl-item ">
+                <div className="card">
+                  <div className="box "></div>
+                </div>
+                <div className="card">
+                  <div className="box"></div>
+                </div>
+                <div className="card">
+                  <div className="box"></div>
                 </div>
               </div>
             </div>
           </div>
+
+
         </section>
 
         <Link to="/signup" className="register">
@@ -54,6 +53,7 @@ export default class Instructions extends Component {
             REGISTER
           </button>
         </Link>
+        
       </div>
     );
   }
