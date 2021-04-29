@@ -227,12 +227,7 @@ export default class Signup extends Component {
             </ul>
           </nav>
         </header>
-        {/* <Nav
-				authenticated={this.props.authenticated}
-				authenticate={this.props.authenticate}
-				deAuthenticate={this.props.deAuthenticate}
-				logout={this.props.logout}
-			/> */}
+      
 
         <section className="join-main-section">
           <h1 className="join-text">

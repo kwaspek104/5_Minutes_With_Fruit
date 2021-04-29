@@ -1,6 +1,12 @@
 /* Login CSS Start */
 
 /****** LOGIN MODAL ******/
+
+
+
+
+
+
 .loginmodal-container {
   color: black;
   padding: 30px;
@@ -98,3 +104,59 @@
     padding-top: 30px;
 }
 /* Login CSS End */
+
+
+.join-main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  padding-top: 5%;
+}
+
+/* 
+.input-group {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group:last-child {
+  margin-bottom: 0;
+}
+
+
+.input-group input {
+  outline: none;
+  background: none;
+  border: 1px solid #2E3852;
+  font-size: 1em;
+  padding: .5em;
+  color: inherit;
+  border-radius: 5px;
+  max-height: 3.7rem;
+}
+
+.input-group input:focus {
+  border-color: #135e8a;
+}
+
+.login-form {
+  background-color: #83A6BA;
+  width: 50vw;
+  max-width: 50%;
+  padding: 2rem 4rem;
+  border-radius: 20px;
+}
+
+
+@media (max-width: 900px) {
+  .join-main-section {
+    flex-direction: column;
+    justify-content: center;
+	padding-top: 5rem;
+	padding-bottom: 10rem;
+  }
+
+  
+} */
