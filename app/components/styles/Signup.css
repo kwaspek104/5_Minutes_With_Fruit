@@ -51,11 +51,13 @@ body {
   padding: .5em;
   color: inherit;
   border-radius: 5px;
+  max-height: 3.7rem;
 }
 
 .input-group input:focus {
-  border-color: #596da0;
+  border-color: #135e8a;
 }
+
 
 @media (max-width: 900px) {
   .join-main-section {
