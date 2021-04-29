@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Main from "./Main";
 import Login from "./Login";
 import Signup from "./Signup";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './quiz.css';
 import Quiz from "./Quiz";
 import axios from "axios";
 import AudioPlayer from "./AudioPlayer";
@@ -114,7 +117,7 @@ export default class MainRouter extends Component {
             )}
           />
           <Route
-            path="/fruit"
+            path="/quiz"
             render={(props) => (
               <Quiz
                 {...props}

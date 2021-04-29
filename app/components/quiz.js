@@ -1,110 +1,69 @@
-import React, { Component } from "react";
-// import * as Survey from "survey-react";
-// import "survey-react/survey.css";
+import React, { useState } from 'react';
 
+export default function App() {
+	const questions = [
+		{
+			questionText: 'What is the capital of France?',
+			answerOptions: [
+				{ answerText: 'New York', isCorrect: false },
+				{ answerText: 'London', isCorrect: false },
+				{ answerText: 'Paris', isCorrect: true },
+				{ answerText: 'Dublin', isCorrect: false },
+			],
+		},
+		{
+			questionText: 'Who is CEO of Tesla?',
+			answerOptions: [
+				{ answerText: 'Jeff Bezos', isCorrect: false },
+				{ answerText: 'Elon Musk', isCorrect: true },
+				{ answerText: 'Bill Gates', isCorrect: false },
+				{ answerText: 'Tony Stark', isCorrect: false },
+			],
+		},
+		{
+			questionText: 'The iPhone was created by which company?',
+			answerOptions: [
+				{ answerText: 'Apple', isCorrect: true },
+				{ answerText: 'Intel', isCorrect: false },
+				{ answerText: 'Amazon', isCorrect: false },
+				{ answerText: 'Microsoft', isCorrect: false },
+			],
+		},
+		{
+			questionText: 'How many Harry Potter books are there?',
+			answerOptions: [
+				{ answerText: '1', isCorrect: false },
+				{ answerText: '4', isCorrect: false },
+				{ answerText: '6', isCorrect: false },
+				{ answerText: '7', isCorrect: true },
+			],
+		},
+	];
 
-require("./quiz.css");
-
-
-
-export default class Quiz extends Component {
-
-  render() {
-    
-
-    return (
-      <div>
-        <Nav
-          authenticated={this.props.authenticated}
-          authenticate={this.props.authenticate}
-          deAuthenticate={this.props.deAuthenticate}
-          logout={this.props.logout}
-        />
-        <br/>
-      
-      <div className="card mb-3">
-        
-        {/* <img src="..." class="card-img-top" alt="..."> */}
-        <div className="card-body">
-          <h2 className="card-title">YOUR FRUIT</h2>
-          <p className="card-text">
-            The fruit that would work best for you is a _ _ _ _ _ _ !
-          </p>
-          <a href="#" className="btn btn-primary">
-            Go to your profile page
-          </a>
-          <p className="card-text">
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </p>
-        </div>
-      </div>
-      </div>
-    );
-  }
-
-  
-  //   constructor(props) {
-  //   super(props);
-  //   this.state = { isCompleted: false };
-  //   this.onCompleteComponent = this.onCompleteComponent.bind(this);
-  // }
-  // onCompleteComponent() {
-  //   this.setState({ isCompleted: true });
-  // }
-  // render() {
-  //   let json = {
-  //     questions: [
-  //       {
-  //         type: "checkbox",
-  //         name: "car",
-  //         title: "What car are you driving?",
-  //         isRequired: true,
-  //         hasSelectAll: true,
-  //         hasNone: true,
-  //         noneText: "None of the above",
-  //         colCount: 4,
-  //         choicesOrder: "asc",
-  //         choices: [
-  //           "Apple",
-  //           "Apricots",
-  //           "Banana",
-  //           "Blueberries",
-  //           "Cantaloupe",
-  //           "Cherries",
-  //           "Clementines",
-  //           "Grapes",
-  //           "Honeydew",
-  //           "Kiwi",
-  //           "Mango",
-  //           "Nectarines",
-  //           "Orange",
-  //           "Peachers",
-  //           "Pears",
-  //           "Pineapple",
-  //           "Plums",
-  //           "Pomegranate",
-  //           "Starfruit",
-  //           "Strawberries"
-  //         ]
-  //       }
-  //     ]
-  //   };
-  //   var surveyRender = !this.state.isCompleted ? (
-  //     <Survey.Survey
-  //       json={json}
-  //       showCompletedPage={false}
-  //       onComplete={this.onCompleteComponent}
-  //     />
-  //   ) : null;
-  //   var onCompleteComponent = this.state.isCompleted ? (
-  //     <div>The component after onComplete event</div>
-  //   ) : null;
-  //   return (
-  //     <div>
-  //       {surveyRender}
-  //       {onCompleteComponent}
-  //     </div>
-  //   );
-  // }
-
+	return (
+		<div className='app'>
+			{/* HINT: replace "false" with logic to display the 
+      score when the user has answered all the questions */}
+			{false ? (
+				<div className='score-section'>You scored 1 out of {questions.length}</div>
+			) : (
+				<>
+					<div className='question-section'>
+						<div className='question-count'>
+							<span>Question 1</span>/{questions.length}
+						</div>
+						<div className='question-text'>This is where the question text should go</div>
+					</div>
+					<div className='answer-section'>
+						<button>Answer 1</button>
+						<button>Answer 2</button>
+						<button>Answer 3</button>
+						<button>Answer 4</button>
+					</div>
+				</>
+			)}
+		</div>
+	);
 }
+
+export default Quiz
