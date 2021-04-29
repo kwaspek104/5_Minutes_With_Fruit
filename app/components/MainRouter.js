@@ -114,7 +114,7 @@ export default class MainRouter extends Component {
             )}
           />
           <Route
-            path="/fruit"
+            path="/quiz"
             render={(props) => (
               <Quiz
                 {...props}
@@ -125,6 +125,7 @@ export default class MainRouter extends Component {
               />
             )}
           />
+          
           <Route
             path="/audioplayer"
             render={(props) => (
