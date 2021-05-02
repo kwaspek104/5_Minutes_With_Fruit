@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Footer from "./children/Footer";
 
 require("./main.css");
-require("./about.css")
+require("./styles/about.css")
 
 
 // Creating the Main component

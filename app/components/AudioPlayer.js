@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import './AudioPlayer.css';
 import Nav from './children/Nav';
 import audio from'./audio/meditation.mp3';
 
+require("./main.css");
+require("./styles/AudioPlayer.css")
 
 const audioSrc = audio
 

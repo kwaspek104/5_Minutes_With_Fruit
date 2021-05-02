@@ -9,6 +9,7 @@
 
 
 
+
 .home-main-section {
   display: flex;
   align-items: stretch;
@@ -40,7 +41,6 @@
 .home-main-section .call-to-action {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   margin: 1rem;
   align-self: center;
 }
@@ -53,8 +53,9 @@
   .home-main-section {
     display: flex;
     justify-content: center;
-    padding-top:25%;
+    padding-top:30%;
     align-items: center;
+    text-align: center;
 
   }
 
